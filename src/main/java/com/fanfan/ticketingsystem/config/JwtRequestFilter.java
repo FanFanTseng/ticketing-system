@@ -1,7 +1,7 @@
 package com.fanfan.ticketingsystem.config;
 
-import com.fanfan.ticketingsystem.service.CustomUserDetailsService;
-import com.fanfan.ticketingsystem.service.JwtUtil;
+import com.fanfan.ticketingsystem.service.UserService;
+import com.fanfan.ticketingsystem.util.JwtUtil;
 import io.jsonwebtoken.ExpiredJwtException;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
@@ -23,7 +23,7 @@ import org.springframework.web.filter.OncePerRequestFilter;
 public class JwtRequestFilter extends OncePerRequestFilter {
 
   @Autowired
-  private CustomUserDetailsService userDetailsService;
+  private UserService userDetailsService;
 
   @Autowired
   private JwtUtil jwtUtil;

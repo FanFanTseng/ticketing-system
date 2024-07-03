@@ -1,4 +1,4 @@
-package com.fanfan.ticketingsystem.service;
+package com.fanfan.ticketingsystem.util;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;

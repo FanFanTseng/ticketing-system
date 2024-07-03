@@ -1,5 +1,6 @@
 package com.fanfan.ticketingsystem.dto;
 
+import java.time.LocalDate;
 import lombok.Data;
 
 /**
@@ -11,6 +12,7 @@ public class UserDTO {
   private String username;
   private String password;
   private String email;
+  private LocalDate birthdate;
 
   // Getters and setters
 }
